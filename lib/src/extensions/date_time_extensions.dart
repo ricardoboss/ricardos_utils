@@ -1,4 +1,4 @@
-part of ricardos_utils;
+part of ricardos.extensions;
 
 extension DateTimeExtensions on DateTime {
   String toDateTimeString() {

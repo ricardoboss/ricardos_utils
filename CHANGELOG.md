@@ -1,3 +1,7 @@
+## 1.0.2
+
+- Reorganized exports and libraries
+
 ## 1.0.1
 
 - Added `ClickToCopyText` widget
