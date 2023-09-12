@@ -1,3 +1,7 @@
+## 1.0.3
+
+- Fixed an issue with `Future<T>.thenBuild` for cases when `T` is nullable
+
 ## 1.0.2
 
 - Reorganized exports and libraries
