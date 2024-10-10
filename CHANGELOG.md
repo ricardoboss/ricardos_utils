@@ -1,3 +1,8 @@
+## 2.0.0
+
+- Removed `IterableExtensions.groupBy` as it was deprecated in 1.0.5
+- Removed `FutureExtensions.thenBuild` as it was deprecated in 1.0.5
+
 ## 1.0.5
 
 - Marked `IterableExtensions.groupBy` as deprecated; you should use https://pub.dev/documentation/collection/latest/collection/groupBy.html instead
