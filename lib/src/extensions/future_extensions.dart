@@ -1,6 +1,7 @@
 part of '../extensions.dart';
 
 extension FutureExtension<T> on Future<T> {
+  @Deprecated('Use https://pub.dev/packages/easy_future_builder instead')
   FutureBuilder<T> thenBuild(
     Widget Function(BuildContext context, T result) builder, {
     Widget Function(BuildContext context)? onLoading,

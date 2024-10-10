@@ -1,6 +1,7 @@
 ## 1.0.5
 
 - Marked `IterableExtensions.groupBy` as deprecated; you should use https://pub.dev/documentation/collection/latest/collection/groupBy.html instead
+- Marked `FutureExtensions.thenBuild` as deprecated; you should use https://pub.dev/packages/easy_future_builder instead
 
 ## 1.0.4
 
