@@ -1,7 +1,7 @@
 name: ricardos_utils
 description: A set of utilities I use in my Flutter projects
 version: 2.0.0
-homepage: https://github.com/ricardoboss/ricardos_utils
+repository: https://github.com/ricardoboss/ricardos_utils
 
 environment:
   sdk: '>=3.5.2 <4.0.0'
