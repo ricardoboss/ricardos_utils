@@ -1,3 +1,7 @@
+## 2.0.1
+
+- Updated `README.md`
+
 ## 2.0.0
 
 - Removed `IterableExtensions.groupBy` as it was deprecated in 1.0.5
