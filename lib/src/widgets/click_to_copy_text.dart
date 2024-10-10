@@ -1,14 +1,14 @@
-part of ricardos.widgets;
+part of '../widgets.dart';
 
 class ClickToCopyText extends StatefulWidget {
-  final String text;
-  final FutureOr<void> Function()? onCopied;
-
   const ClickToCopyText(
     this.text, {
     super.key,
     this.onCopied,
   });
+
+  final String text;
+  final FutureOr<void> Function()? onCopied;
 
   @override
   State<ClickToCopyText> createState() => _ClickToCopyTextState();
@@ -23,9 +23,14 @@ class _ClickToCopyTextState extends State<ClickToCopyText> {
         onTap: () async {
           await Clipboard.setData(ClipboardData(text: widget.text));
 
-          if (!mounted) return;
+          if (!mounted) {
+            return;
+          }
+
           final callback = widget.onCopied;
-          if (callback != null) await callback();
+          if (callback != null) {
+            await callback();
+          }
         },
         child: Tooltip(
           message: 'Click to copy',

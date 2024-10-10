@@ -1,4 +1,4 @@
-part of ricardos.extensions;
+part of '../extensions.dart';
 
 extension TargetPlatformExtensions on TargetPlatform {
   bool get isDesktop {

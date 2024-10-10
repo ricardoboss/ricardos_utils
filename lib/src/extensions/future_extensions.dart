@@ -1,4 +1,4 @@
-part of ricardos.extensions;
+part of '../extensions.dart';
 
 extension FutureExtension<T> on Future<T> {
   FutureBuilder<T> thenBuild(

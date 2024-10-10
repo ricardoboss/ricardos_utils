@@ -1,4 +1,4 @@
-part of ricardos.extensions;
+part of '../extensions.dart';
 
 extension NumExtensions on num {
   /// Returns a string representation of this number with a sign:
@@ -29,12 +29,16 @@ extension NumExtensions on num {
     const decimalBase = 1000;
     const units = ['B', 'kB', 'MB', 'GB', 'TB'];
 
-    if (this <= 0) return (0, 'B');
+    if (this <= 0) {
+      return (0, 'B');
+    }
 
     final digitGroups = logBase(decimalBase).clamp(0, units.length - 1).floor();
     final value = this / pow(decimalBase, digitGroups);
 
-    if (value == 0) return (0, 'B');
+    if (value == 0) {
+      return (0, 'B');
+    }
 
     final unit = units[digitGroups];
 

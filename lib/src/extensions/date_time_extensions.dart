@@ -1,4 +1,4 @@
-part of ricardos.extensions;
+part of '../extensions.dart';
 
 extension DateTimeExtensions on DateTime {
   String toDateTimeString() {

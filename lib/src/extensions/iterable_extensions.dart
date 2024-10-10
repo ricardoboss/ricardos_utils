@@ -1,8 +1,9 @@
-part of ricardos.extensions;
+part of '../extensions.dart';
 
 extension IterableExtensions<T> on Iterable<T> {
   Iterable<MapEntry<U, Iterable<T>>> groupBy<U>(
-      U Function(T) keySelector) sync* {
+    U Function(T) keySelector,
+  ) sync* {
     final map = <U, List<T>>{};
     for (final element in this) {
       final key = keySelector(element);
