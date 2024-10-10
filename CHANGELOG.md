@@ -1,3 +1,7 @@
+## 1.0.5
+
+- Marked `IterableExtensions.groupBy` as deprecated; you should use https://pub.dev/documentation/collection/latest/collection/groupBy.html instead
+
 ## 1.0.4
 
 - Added `NumExtensions`:

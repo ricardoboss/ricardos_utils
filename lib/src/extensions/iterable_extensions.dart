@@ -1,6 +1,7 @@
 part of '../extensions.dart';
 
 extension IterableExtensions<T> on Iterable<T> {
+  @Deprecated('Use https://pub.dev/packages/collection instead')
   Iterable<MapEntry<U, Iterable<T>>> groupBy<U>(
     U Function(T) keySelector,
   ) sync* {
